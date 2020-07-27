@@ -1,0 +1,58 @@
+@import '../main.scss';
+
+.home-1{
+
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    "symb top link"
+    "left central right"
+    "works central right"
+    ;
+
+    .body{
+        grid-area:central;
+        height: 100vh;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .logo{
+        grid-area: central;
+        align-self: center;
+        justify-self: top;
+        z-index: 10;
+        margin-bottom: 10%;
+    }
+    .symb{
+        grid-area: symb;
+        width: 20%;
+        place-self: end;
+        margin-bottom: 0;
+    }
+    .menu{
+        grid-area: link;
+        align-self: end;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-bottom: 7%;
+        font-weight: 200;
+    }
+    .works{
+        grid-area: works;
+        align-self: end;
+        justify-self: end;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-bottom: 7%;
+        margin-right: 3%;
+        font-weight: 200;
+    }
+
+}

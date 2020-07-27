@@ -1,0 +1,52 @@
+@import '../main.scss';
+
+
+.menu{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-rows: 15% 65% 20%;
+    grid-template-areas: 
+    "start content link"
+    "left content right"
+    "social content right"
+    ;
+    
+    .symb{
+       grid-area: start;
+       width: 20%;
+       place-self: end;
+       margin-bottom: 0;
+    }
+    .linkAction{
+        grid-area: link;
+        align-self: end;
+        justify-self: start;
+        color: white;
+    }
+    .socialIcons{
+        grid-area: social;
+        place-self: end;
+
+        ul {
+            display: flex;
+            align-items: baseline;
+            li {
+            display: inline-block;
+            padding-left: 1em;
+            a img{
+                width: 1.2em;
+            }
+        }
+        }
+        .behance{
+            width: 1.8em;
+        }
+
+    }
+    .centralContent{
+        grid-area: content;
+        align-self: center;
+        justify-self: end;
+    }
+}
